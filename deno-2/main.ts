@@ -6,7 +6,7 @@ const databaseUrl = Deno.env.get("DATABASE_URL");
 const pool = new Pool(databaseUrl, 3, true);
 
 type Pokemon = {
-  id: 149;
+  id: number;
   name: string;
   type: string;
   avatar: string;
