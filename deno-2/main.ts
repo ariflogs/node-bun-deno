@@ -3,7 +3,7 @@ import { Pool } from "https://deno.land/x/postgres@v0.17.0/mod.ts";
 
 const router = new Router();
 const databaseUrl = Deno.env.get("DATABASE_URL");
-const pool = new Pool(databaseUrl, 30, true);
+const pool = new Pool(databaseUrl, 20, true);
 
 type Pokemon = {
   id: number;
